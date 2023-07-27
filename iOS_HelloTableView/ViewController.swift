@@ -7,7 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+// UITableViewDataSource, UITableViewDelegate 協定
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
