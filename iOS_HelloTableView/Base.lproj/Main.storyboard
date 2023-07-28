@@ -54,18 +54,45 @@
         <scene sceneID="VX6-9w-jaP">
             <objects>
                 <tableViewController id="23C-4R-5O4" customClass="AnimalTableViewController" customModule="iOS_HelloTableView" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="DRa-Lh-rZK">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="DRa-Lh-rZK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cell" id="5Zn-P9-b8p">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="5Zn-P9-b8p" customClass="SpecialTableViewCell" customModule="iOS_HelloTableView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="393" height="200"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Zn-P9-b8p" id="LWJ-9R-s2O">
-                                    <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="43.666667938232422"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ol6-fo-iPJ">
+                                            <rect key="frame" x="76.666666666666686" y="36" width="240" height="128"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruS-Uh-la5">
+                                            <rect key="frame" x="325" y="158" width="63" height="27"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="63" id="54w-yl-Idd"/>
+                                                <constraint firstAttribute="height" constant="27" id="Y4L-ZQ-u5S"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="24"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="ruS-Uh-la5" secondAttribute="bottom" constant="15" id="Aqb-zL-2Y8"/>
+                                        <constraint firstItem="Ol6-fo-iPJ" firstAttribute="width" secondItem="LWJ-9R-s2O" secondAttribute="width" multiplier="0.610687" id="F5G-wO-SjB"/>
+                                        <constraint firstItem="Ol6-fo-iPJ" firstAttribute="height" secondItem="LWJ-9R-s2O" secondAttribute="height" multiplier="0.64" id="rZS-yi-r5Z"/>
+                                        <constraint firstItem="Ol6-fo-iPJ" firstAttribute="centerX" secondItem="LWJ-9R-s2O" secondAttribute="centerX" id="scn-9r-wVL"/>
+                                        <constraint firstAttribute="trailing" secondItem="ruS-Uh-la5" secondAttribute="trailing" constant="5" id="u30-Sg-wmF"/>
+                                        <constraint firstItem="Ol6-fo-iPJ" firstAttribute="centerY" secondItem="LWJ-9R-s2O" secondAttribute="centerY" id="xJA-T1-hc9"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="specailImageView" destination="Ol6-fo-iPJ" id="z67-df-50i"/>
+                                    <outlet property="specailLabel" destination="ruS-Uh-la5" id="aQl-CL-Y34"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

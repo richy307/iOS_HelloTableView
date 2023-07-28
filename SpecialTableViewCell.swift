@@ -9,6 +9,11 @@ import UIKit
 
 class SpecialTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var specailLabel: UILabel!
+    @IBOutlet weak var specailImageView: UIImageView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
