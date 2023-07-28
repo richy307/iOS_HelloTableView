@@ -46,7 +46,8 @@ class AnimalTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Configure the cell...
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) // reuseIdentifier
-        cell.textLabel?.text = animalArray[indexPath.row]
+        cell.textLabel?.text = animalArray[indexPath.row] // 設定文字
+        cell.imageView?.image = UIImage(named: animalArray[indexPath.row]) // 設定圖片
 
         return cell
     }
