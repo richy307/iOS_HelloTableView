@@ -15,6 +15,7 @@
 		1A05038D2A72373100840D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A05038B2A72373100840D2A /* LaunchScreen.storyboard */; };
 		1A0503952A73621300840D2A /* AnimalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0503942A73621300840D2A /* AnimalTableViewController.swift */; };
 		1A0503972A73907600840D2A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0503962A73907500840D2A /* DetailViewController.swift */; };
+		1A0503992A739BED00840D2A /* SpecialTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0503982A739BED00840D2A /* SpecialTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1A05038E2A72373100840D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A0503942A73621300840D2A /* AnimalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewController.swift; sourceTree = "<group>"; };
 		1A0503962A73907500840D2A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		1A0503982A739BED00840D2A /* SpecialTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		1A0503742A72372900840D2A = {
 			isa = PBXGroup;
 			children = (
+				1A0503982A739BED00840D2A /* SpecialTableViewCell.swift */,
 				1A05037F2A72372900840D2A /* iOS_HelloTableView */,
 				1A05037E2A72372900840D2A /* Products */,
 			);
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A0503852A72372A00840D2A /* ViewController.swift in Sources */,
+				1A0503992A739BED00840D2A /* SpecialTableViewCell.swift in Sources */,
 				1A0503812A72372A00840D2A /* AppDelegate.swift in Sources */,
 				1A0503972A73907600840D2A /* DetailViewController.swift in Sources */,
 				1A0503832A72372A00840D2A /* SceneDelegate.swift in Sources */,
