@@ -13,6 +13,7 @@
 		1A0503882A72372A00840D2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0503862A72372A00840D2A /* Main.storyboard */; };
 		1A05038A2A72373100840D2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0503892A72373100840D2A /* Assets.xcassets */; };
 		1A05038D2A72373100840D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A05038B2A72373100840D2A /* LaunchScreen.storyboard */; };
+		1A0503952A73621300840D2A /* AnimalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0503942A73621300840D2A /* AnimalTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1A0503892A72373100840D2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A05038C2A72373100840D2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A05038E2A72373100840D2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A0503942A73621300840D2A /* AnimalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1A0503892A72373100840D2A /* Assets.xcassets */,
 				1A05038B2A72373100840D2A /* LaunchScreen.storyboard */,
 				1A05038E2A72373100840D2A /* Info.plist */,
+				1A0503942A73621300840D2A /* AnimalTableViewController.swift */,
 			);
 			path = iOS_HelloTableView;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				1A0503852A72372A00840D2A /* ViewController.swift in Sources */,
 				1A0503812A72372A00840D2A /* AppDelegate.swift in Sources */,
 				1A0503832A72372A00840D2A /* SceneDelegate.swift in Sources */,
+				1A0503952A73621300840D2A /* AnimalTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
