@@ -75,6 +75,7 @@ class AnimalTableViewController: UITableViewController {
                 // IndexPath.row
                 if let selectedRaw = selectedIndexPath?.row {
                     dvc.infoFromViewOne = animalArray[selectedRaw]
+                    // 設定頁面標題
                     dvc.navigationItem.title = animalArray[selectedRaw]
                 }
             }
