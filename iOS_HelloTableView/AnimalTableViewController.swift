@@ -55,6 +55,21 @@ class AnimalTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "showDetail", sender: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+            if let dvc = segue.destination as? DetailViewController {
+                
+                // IndexPath
+                let selectedIndexPath = self.tableView.indexPathForSelectedRow
+                // IndexPath.row
+                if let selectedRaw = selectedIndexPath?.row {
+                    dvc.infoFromViewOne = animalArray[selectedRaw]
+                    dvc.navigationItem.title = animalArray[selectedRaw]
+                }
+            }
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
