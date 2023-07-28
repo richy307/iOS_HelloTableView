@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="1840.4580152671756" y="-27.464788732394368"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="asi-Xr-3ug">
             <objects>
-                <viewController id="dNX-EX-VA7" sceneMemberID="viewController">
+                <viewController id="dNX-EX-VA7" customClass="DetailViewController" customModule="iOS_HelloTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="55Y-ex-1We">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,7 +108,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g6g-ww-ZFv"/>
-                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.98394592868105268" green="0.99942404029999998" blue="0.69790179486858372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="kgt-7T-fQh" firstAttribute="top" secondItem="RZ1-dx-ZPa" secondAttribute="bottom" constant="35" id="gdQ-zh-emh"/>
                             <constraint firstItem="kgt-7T-fQh" firstAttribute="trailing" secondItem="g6g-ww-ZFv" secondAttribute="trailing" id="k5L-HA-QGK"/>
@@ -118,6 +118,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qhW-Sl-dHZ"/>
+                    <connections>
+                        <outlet property="myImageView" destination="RZ1-dx-ZPa" id="ZWd-yR-IHa"/>
+                        <outlet property="myLabel" destination="kgt-7T-fQh" id="JZk-Ck-1gx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lNh-SP-1Ip" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
