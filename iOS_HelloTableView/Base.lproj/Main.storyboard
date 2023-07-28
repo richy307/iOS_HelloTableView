@@ -67,13 +67,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ol6-fo-iPJ">
-                                            <rect key="frame" x="76.666666666666686" y="36" width="240" height="128"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="200"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ruS-Uh-la5">
-                                            <rect key="frame" x="325" y="158" width="63" height="27"/>
+                                            <rect key="frame" x="238" y="145" width="150" height="40"/>
+                                            <color key="backgroundColor" red="0.49778481949999998" green="0.96683302209999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="63" id="54w-yl-Idd"/>
-                                                <constraint firstAttribute="height" constant="27" id="Y4L-ZQ-u5S"/>
+                                                <constraint firstAttribute="width" constant="150" id="54w-yl-Idd"/>
+                                                <constraint firstAttribute="height" constant="40" id="Y4L-ZQ-u5S"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="24"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -82,8 +83,8 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="ruS-Uh-la5" secondAttribute="bottom" constant="15" id="Aqb-zL-2Y8"/>
-                                        <constraint firstItem="Ol6-fo-iPJ" firstAttribute="width" secondItem="LWJ-9R-s2O" secondAttribute="width" multiplier="0.610687" id="F5G-wO-SjB"/>
-                                        <constraint firstItem="Ol6-fo-iPJ" firstAttribute="height" secondItem="LWJ-9R-s2O" secondAttribute="height" multiplier="0.64" id="rZS-yi-r5Z"/>
+                                        <constraint firstItem="Ol6-fo-iPJ" firstAttribute="width" secondItem="LWJ-9R-s2O" secondAttribute="width" id="F5G-wO-SjB"/>
+                                        <constraint firstItem="Ol6-fo-iPJ" firstAttribute="height" secondItem="LWJ-9R-s2O" secondAttribute="height" id="rZS-yi-r5Z"/>
                                         <constraint firstItem="Ol6-fo-iPJ" firstAttribute="centerX" secondItem="LWJ-9R-s2O" secondAttribute="centerX" id="scn-9r-wVL"/>
                                         <constraint firstAttribute="trailing" secondItem="ruS-Uh-la5" secondAttribute="trailing" constant="5" id="u30-Sg-wmF"/>
                                         <constraint firstItem="Ol6-fo-iPJ" firstAttribute="centerY" secondItem="LWJ-9R-s2O" secondAttribute="centerY" id="xJA-T1-hc9"/>

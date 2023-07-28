@@ -45,11 +45,20 @@ class AnimalTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Configure the cell...
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) // reuseIdentifier
-        cell.textLabel?.text = animalArray[indexPath.row] // 設定文字
-        cell.imageView?.image = UIImage(named: animalArray[indexPath.row]) // 設定圖片
-
-        return cell
+        
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? SpecialTableViewCell { // reuseIdentifier
+            cell.specailLabel?.text = animalArray[indexPath.row] // 設定文字
+            cell.specailImageView?.image = UIImage(named: animalArray[indexPath.row]) // 設定圖片
+            
+            return cell
+        } else {
+            // 預設
+            let cell = UITableViewCell()
+            cell.textLabel?.text = animalArray[indexPath.row]
+            cell.imageView?.image = UIImage(named: animalArray[indexPath.row]) // 設定圖片
+            
+            return cell
+        }
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
