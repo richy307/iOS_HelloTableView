@@ -9,6 +9,14 @@ import UIKit
 
 class AnimalTableViewController: UITableViewController {
     
+    // 1. prefersStatusBarHidden
+    // 2. Navigation Controller
+    
+    /*
+    override var prefersStatusBarHidden: Bool{
+        return true // 隱藏狀態列
+    }*/
+    
     let animalArray = ["cat", "chicken", "dog", "elephant", "fox", "goat", "kangaroo", "monkey", "mouse", "penguin", "rabbit", "snail"]
 
     
