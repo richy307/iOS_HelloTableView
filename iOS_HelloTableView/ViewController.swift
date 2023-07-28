@@ -12,13 +12,18 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     // 實作section (區塊)
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     // Row number
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // return 3
-        return fruitArray.count
+        // return 3 // return fruitArray.count
+        
+        if section == 0 {
+            return fruitArray.count
+        } else {
+            return colorArray.count
+        }
     }
     
     // Row cell 每一列的內容
@@ -28,14 +33,27 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         // indexPath.section // 哪個區塊
-        
-        cell.textLabel?.text = fruitArray[indexPath.row] // "iPhone"
+        if indexPath.section == 0 {
+            cell.textLabel?.text = fruitArray[indexPath.row] // "iPhone"
+        } else {
+            cell.textLabel?.text = colorArray[indexPath.row]
+        }
         
         return cell
     }
     
+    // Row Title
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if section == 0 {
+            return "FRUIT"
+        } else {
+            return "COLOR"
+        }
+    }
+    
     // data Array
     var fruitArray = ["apple", "banana", "mango", "watermelon"]
+    var colorArray = ["red", "green", "blue"]
     
     
     override func viewDidLoad() {
