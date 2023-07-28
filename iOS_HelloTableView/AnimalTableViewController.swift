@@ -52,6 +52,9 @@ class AnimalTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showDetail", sender: nil)
+    }
 
     /*
     // Override to support conditional editing of the table view.
